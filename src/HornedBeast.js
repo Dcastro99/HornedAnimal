@@ -14,7 +14,7 @@ class HornedBeast extends React.Component {
         <img src={Cassowary} alt="horned bird" title="Cassowary"></img>
         <p>{this.props.description2}</p>
         <h2>{this.props.title3}</h2>
-        <img src={NubianIbex} alt="horned gopher-skeleton" title="Horned Gopher"></img>
+        <img src={NubianIbex} alt="horned animal" title="Nubian Ibex"></img>
         <p>{this.props.description3}</p>
       </div>
      
