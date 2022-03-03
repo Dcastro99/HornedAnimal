@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
+import {Container, Row, Col} from 'react-bootstrap'
 
 
 class App extends React.Component {
@@ -10,6 +11,7 @@ class App extends React.Component {
 
   
     return (
+      
       <div className="App">
       
       <Header/>
@@ -19,5 +21,6 @@ class App extends React.Component {
     );
   }
 }
+
 
 export default App;
