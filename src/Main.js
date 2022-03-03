@@ -1,18 +1,31 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
+import Data from "./Data.json";
+import "./App.css";
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      AllBeasts: Data,
+    };
+  }
+
   render() {
+    let HornedArr = this.state.AllBeasts.map((animal) => (
+      <HornedBeast
+        name={animal.title}
+        img={animal.image_url}
+        description={animal.description}
+        alt={animal.keyword}
+      />
+    ));
+
     return (
       <>
-       <HornedBeast 
-
-       title1={'Horned Gopher'} description1={'Horned gophers are the smallest known horned mammals and the only known rodents ever to have had horns.'}
-       title2={'Cassowary'} description2={'It\'s horn is called a casque. It has an inner layer of soft, spongy material and an outer layer of keratin. If you were to squeeze its horn, it would be soft in its middle portion.'}
-       title3={'Nubian Ibex'} description3={'Desert-dwelling goat species found in mountainous areas of northern and northeast Africa, and the Middle East.'}
-       />
+        <div className="arr">{HornedArr}</div>
       </>
-    )
+    );
   }
 }
 

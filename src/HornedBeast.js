@@ -1,27 +1,34 @@
 import React from "react";
-import HornedGopher from "./horned-gophers.jpeg"
-import Cassowary from "./cassowary1.jpg"
-import NubianIbex from "./nubianibex.jpeg"
+import Card from 'react-bootstrap/Card'
 
 class HornedBeast extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      favorited: 0 
+    }
+  }
+
+  favorites = () => {
+    this.setState({
+      favorited: this.state.favorited + 1
+    })
+  }
+
   render() {
     return (
-      <div>
-        <h2>{this.props.title1}</h2>
-        <img src={HornedGopher} alt="horned gopher-skeleton" title="Horned Gopher"></img>
-        <p>{this.props.description1}</p>
-        <h2>{this.props.title2}</h2>
-        <img src={Cassowary} alt="horned bird" title="Cassowary"></img>
-        <p>{this.props.description2}</p>
-        <h2>{this.props.title3}</h2>
-        <img src={NubianIbex} alt="horned gopher-skeleton" title="Horned Gopher"></img>
-        <p>{this.props.description3}</p>
-      </div>
-     
       
-      
+      <Card className="animalCard" style={{ width: '18rem' }}>
+        <Card.Title>{this.props.name}</Card.Title>
+          <Card.Img variant="top" src={this.props.img} alt={this.props.alt} onClick={this.favorites}/>
+            <Card.Body>
+              <Card.Text>favorited ={this.state.favorited} ❤️</Card.Text>
+            </Card.Body>
+      </Card>
+    
     )
   }
 }
 
 export default HornedBeast;
+
