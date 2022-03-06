@@ -12,7 +12,14 @@ class Header extends React.Component {
           }}
           className="Header"
         >
-          <h1 style={{ color: 'black' }}>Horned Beasts!</h1>
+          <h1
+            style={{
+              color: 'coral',
+              textShadow: '2px 2px 5px black',
+            }}
+          >
+            Horned Beasts!
+          </h1>
         </div>
       </>
     );
