@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .animalCard {
@@ -12,11 +14,15 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   border: 15px solid rgba(250, 172, 62, 0.79);
+  border-radius: 15px;
+
   background-color: black;
 }
 
 .Header {
-  background-color: black;
+  /* background-color: black; */
+  border: 10px solid rgba(250, 172, 62, 0.529);
+  border-radius: 15px;
 }
 
 .Header h1 {
