@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class Footer extends React.Component {
   render() {
@@ -6,7 +6,7 @@ class Footer extends React.Component {
       <>
         <h3>Created by: Danny C.</h3>
       </>
-    )
+    );
   }
 }
 

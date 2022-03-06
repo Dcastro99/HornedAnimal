@@ -1,23 +1,18 @@
-import React from "react";
-import HornedBeast from "./HornedBeast";
-import Data from "./Data.json";
-import "./App.css";
+import React from 'react';
+import HornedBeast from './HornedBeast';
+
+import './App.css';
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      AllBeasts: Data,
-    };
-  }
-
   render() {
-    let HornedArr = this.state.AllBeasts.map((animal) => (
+    let HornedArr = this.props.allBeasts.map((animal, idx) => (
       <HornedBeast
         name={animal.title}
         img={animal.image_url}
         description={animal.description}
         alt={animal.keyword}
+        showBeast={this.props.showBeast}
+        key={idx}
       />
     ));
 
