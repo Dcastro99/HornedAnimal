@@ -30,7 +30,11 @@ class App extends React.Component {
     return (
       <Container className="App">
         <Header />
-        <Main allBeasts={this.state.allBeasts} showBeast={this.showBeast} />
+        <Main
+          className="main"
+          allBeasts={this.state.allBeasts}
+          showBeast={this.showBeast}
+        />
         <SelectedBeast
           show={this.state.show}
           handleClose={this.onHide}
