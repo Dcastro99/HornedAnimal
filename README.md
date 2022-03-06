@@ -44,6 +44,11 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 2:45pm (3.5.22)
 
-Finish time: _____
+Finish time: 500pm (3.5.22)
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2:15 min (alriiight!)
+
+### Help
+
+- had Hugo help me with calling a function. Really helpfull.
+- Hexx helped me move Data to App.js
