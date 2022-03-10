@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
 #root {
   background-color: black;
 }
@@ -6,6 +8,18 @@
   text-align: center;
   background-color: black;
   border-radius: 10px;
+}
+
+#message {
+  color: rgb(255, 80, 156);
+  font-family: 'Creepster', cursive;
+}
+#HornForm {
+  /* border: 10px solid rgba(250, 172, 62, 0.79);
+  border-radius: 10px; */
+  color: rgba(255, 127, 80, 0.81);
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .animalCard {
