@@ -35,7 +35,7 @@ class App extends React.Component {
     const value = event.target.value;
     if (value) {
       const howManyHorns = this.state.allBeasts.filter(
-        (animal) => animal.horns == value
+        (animal) => animal.horns === Number(value)
       );
       this.setState({ filteredBeasts: howManyHorns });
       if (value === '100') {
