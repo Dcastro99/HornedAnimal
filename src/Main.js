@@ -5,20 +5,25 @@ import './App.css';
 
 class Main extends React.Component {
   render() {
-    let HornedArr = this.props.allBeasts.map((animal, idx) => (
-      <HornedBeast
-        name={animal.title}
-        img={animal.image_url}
-        description={animal.description}
-        alt={animal.keyword}
-        showBeast={this.props.showBeast}
-        key={idx}
-      />
-    ));
-
     return (
       <>
-        <div className="arr">{HornedArr}</div>
+        {this.props.showSpecialMessage ? (
+          <h1 id="message"> 100?!?! Man! That's a lotta Horns!!!</h1>
+        ) : (
+          ''
+        )}
+        <div className="arr">
+          {this.props.allBeasts.map((animal, idx) => (
+            <HornedBeast
+              name={animal.title}
+              img={animal.image_url}
+              description={animal.description}
+              alt={animal.keyword}
+              showBeast={this.props.showBeast}
+              key={idx}
+            />
+          ))}
+        </div>
       </>
     );
   }
