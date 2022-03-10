@@ -38,13 +38,13 @@ class App extends React.Component {
         (animal) => animal.horns === Number(value)
       );
       this.setState({ filteredBeasts: howManyHorns });
-      if (value === '100') {
-        this.setState({ showSpecialMessage: true });
-      } else {
-        this.setState({ showSpecialMessage: false });
-      }
     } else {
       this.setState({ filteredBeasts: this.state.allBeasts });
+    }
+    if (value === '100') {
+      this.setState({ showSpecialMessage: true });
+    } else {
+      this.setState({ showSpecialMessage: false });
     }
   };
 
