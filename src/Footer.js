@@ -4,7 +4,9 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <h3 style={{ color: 'coral' }}>Created by: Danny C.</h3>
+        <h3 id="footerText" style={{ color: 'aqua' }}>
+          Created by: Danny C.
+        </h3>
       </>
     );
   }
