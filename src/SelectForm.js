@@ -11,7 +11,10 @@ class SelectForm extends React.Component {
             <Form.Label>
               <h2>How many horns!</h2>
             </Form.Label>
-            <Form.Select onChange={(event) => this.props.handleChange(event)}>
+            <Form.Select
+              id="select"
+              onChange={(event) => this.props.handleChange(event)}
+            >
               <option value="">Please Select An Option</option>
               <option value="1">One</option>
               <option value="2">Two</option>
